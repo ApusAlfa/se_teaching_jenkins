@@ -33,3 +33,13 @@ SCM > GIT > link do repezytorium i ustawiamy credetnial.
 docker start jenkins-wsb
 
 (https://github.com/wojciech11/se_teaching_jenkins/blob/master/Makefile#L8 )
+
+5. Restart Jenkinsa > po stronie Jenkinsa należy przygotować do restartu jak w zadaniu 13 pliku 04_CD_Cloud.pdf. (potrzebne do pluginu GreenBall)
+Następnie należy wpisać te komendy:
+sudo docker ps
+sudo docker restart <NAME as docker>
+
+6. Do zadania 14 "znajdź kod źródłowy w folderdze jobs i workspace" przechodzimy tam z poziomu konsoli tak jak jest to opisane w zadaniu. Jednak tu, musimy dodać:
+jenkins@cc7104d52579:~/workspace$ cd $JENKINS_HOME
+jenkins@cc7104d52579:~/workspace$ cd se_hello_printer_app
+jenkins@cc7104d52579:~/workspace/se_hello_printer_app$ make test
